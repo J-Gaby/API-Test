@@ -34,9 +34,9 @@ $.ajax({
             $('#bodyacttr' + i).append('<td><button type="button" class="btn btn-primary" id="button' + i + '" data-toggle="modal" data-target="#modalv">Voir</button></td>');
             
             $("#button" + i).on("click", function(parama, paramb, paramc, paramd, parame, paramf){
+                $('#idf p').text("");
                 var parama = tableau[i].id
-                $('#idf').append(parama);
-                $('#idf').val(parama);
+                $('#idf').append('<p>' + parama + '</p>');
 
                 var paramb = tableau[i].type
                 $('#typef').val(paramb);
@@ -84,9 +84,10 @@ function inputtype(){
                 $('#bodyacttr' + i).append('<td><button type="button" class="btn btn-primary" id="button' + i + '" data-toggle="modal" data-target="#modalv">Voir</button></td>');
                 
                 $("#button" + i).on("click", function(parama, paramb, paramc, paramd, parame, paramf){
-                    var parama = tableau[i].id
-                    $('#idf').val(parama);
-    
+                    ('#idf p').text("");
+                var parama = tableau[i].id
+                $('#idf').append('<p>' + parama + '</p>');
+                    
                     var paramb = tableau[i].type
                     $('#typef').val(paramb);
     
@@ -133,8 +134,9 @@ function inputprix(){
                 $('#bodyacttr' + i).append('<td><button type="button" class="btn btn-primary" id="button' + i + '" data-toggle="modal" data-target="#modalv">Voir</button></td>');
                 
                 $("#button" + i).on("click", function(parama, paramb, paramc, paramd, parame, paramf){
-                    var parama = tableau[i].id
-                    $('#idf').val(parama);
+                    ('#idf p').text("");
+                var parama = tableau[i].id
+                $('#idf').append('<p>' + parama + '</p>');
     
                     var paramb = tableau[i].type
                     $('#typef').val(paramb);
